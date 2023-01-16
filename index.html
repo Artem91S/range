@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+        body{
+            background: linear-gradient(rgba(13,7,1,1), rgba(139,136,133,1));
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+        }
+        img{
+            max-width: 400px;;
+            max-height: 400px;
+            box-shadow: 3px 5px 3px rgba(13,7,1,0.5);
+        }
+        #slider{
+            cursor: pointer;
+        }
+        p{
+            color:#fff;
+            font-weight: 700;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <p>
+        JavaScript how to use.
+        Make change of image opacity using HTML range slider
+    </p>
+
+    <img src="/Product-Photography.png" alt="working table" id="table">
+    <input type="range" value="100" min="0" max="100" id="slider">
+    </div>
+
+    <script>
+        slider.oninput=changeOpacity;
+        function changeOpacity(){
+            table.style.opacity = this.value/100;
+        }
+    </script>
+</body>
+</html>
